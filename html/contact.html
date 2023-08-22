@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - Ad Meliora</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img id="logo-am" src="../img/logo.png" alt="Logo">
+            <span>Ad Meliora - Servicios de consultoría para empresas </span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html">Identidad</a></li>
+                <li><a href="mission.html">Misión</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="certifications.html">Certificaciones</a></li>
+                <li class="selected"><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Hablemos</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet ullamcorper quam, a pulvinar dui. Morbi quis aliquam dolor. Donec at ipsum maximus sapien varius feugiat nec non ex. Suspendisse at ligula cursus, sagittis massa eget, cursus orci. Aenean ullamcorper, nulla dignissim eleifend viverra, neque elit ornare diam, eget placerat diam risus ut purus.</p>
+    </section>
+
+    <section>
+        <form action="/formulario.php" method="POST">
+            <div class="formularioflex">
+                <label for="nombre">Nombre:&ensp;</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Gomez" required>
+          
+                <label for="apellido">&emsp; Apellido:&ensp;</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Addams" required>
+            </div>
+
+            <div class="formularioflex">
+                <label for="email">Email:&ensp;</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" required>
+
+                <label for="telefono">&emsp; Telefono (opcional):&ensp;</label>
+                <input type="text" id="telefono" name="telefono" placeholder="0303456">
+            </div>
+
+            <div class="formularioflex">
+                <label for="motivo">Motivo del contacto:&ensp;</label>
+                <select id="motivo" name="motivo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="consultastd">Soluciones estándar</option>
+                <option value="consultacustom">Soluciones a medida</option>
+                <option value="otraconsulta">Otras consultas</option>
+                <option value="trabajo">Trabajar con nosotros</option>
+                </select>
+            </div>
+            <div class="formularioflex">
+                <textarea name="mensaje" id="mensaje" rows="5" cols="80" placeholder="Escriba su mensaje aquí."></textarea>
+            </div>
+
+            <div class="formularioflex">
+                <input type="submit" name="Enviar" id="">
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/"><img id="img-redes" src="../img/00_fb.png" alt="Logo"></a></li>
+            <li><a href="https://twitter.com/"><img id="img-redes" src="../img/00_tw.png" alt="Logo"></a></li>
+            <li><a href="https://www.instagram.com/"><img id="img-redes" src="../img/00_ig.png" alt="Logo"></a></li>
+            <li><a href="https://wa.me/5491130342214"><img id="img-redes" src="../img/00_wa.png" alt="Logo"></a></li>
+            <li><a href="https://www.linkedin.com/"><img id="img-redes" src="../img/00_in.png" alt="Logo"></a></li>
+        </ul>
+        <p>© 2023 Tacuara Studio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

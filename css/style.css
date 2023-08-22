@@ -1,0 +1,193 @@
+html { /* definiendo la familia de fuentes para todo el documento */
+    font-family: 'ubuntu-general';
+    color: #555577;
+}
+
+@font-face {
+    font-family: 'ubuntu-general'; /* familia de fuentes para el sitio */
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+/* ID */
+#img-redes {
+    width: 24px;
+    height: 24px;
+}
+
+#logo-am {
+    width: 125px;
+    height: 125px;
+}
+
+/* CLASES */
+
+.selected { /* link seleccionado */
+    font-weight: bold;
+    border-bottom: 3px solid #BBBBDD;
+    padding-bottom: 3px;
+}
+
+.seccionflex {
+    display: flex;
+}
+
+.formularioflex {
+    display: flex;
+    padding: 1rem;
+}
+
+.columnaflex {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+/* GENERICOS */
+
+body{
+    background-color: #555577;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* HEADER */
+
+header {
+    background-color: #777799;
+
+}
+
+header span {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* LINKS DE HEADER */
+
+header a:link {
+    text-decoration:none;
+}
+
+header a:hover { 
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+header a:visited {
+    color: #BBBBDD;
+    text-decoration:none;
+}
+
+header a:active {
+    opacity: 0.3;
+    font-weight: bold;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: #777799;
+    padding-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li { /* para quitarle las viñetas a los elementos de la navbar */
+    list-style-type: none;
+}
+
+/* LINKS DE NAVBAR */
+
+nav a:link { 
+    color: #BBBBDD;
+    text-decoration:none;
+}
+
+nav a:hover { 
+    font-weight: bold;
+    border-bottom: 3px solid #BBBBDD;
+    padding-bottom: 3px;
+}
+
+nav a:visited {
+    color: #BBBBDD;
+    text-decoration:none;
+}
+
+nav a:active {
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+/* SECTION */
+
+section {
+    color: #AAAABB;
+    padding: 0.5rem;
+}
+
+section h1 {
+    color: #9999AA;
+    text-align: left;
+}
+
+section h2 {
+    color: #888899;
+}
+
+section h3 {
+    color: #777788;
+}
+
+section img {
+    padding: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    color: #111144;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+footer ul {
+    display: flex;
+    justify-content: end;
+}
+
+footer ul li { /* para quitarle las viñetas a los elementos del footer */
+    list-style-type: none;
+    padding-inline: 0.25rem;
+}
+
+/* LINKS DE FOOTER */
+
+footer a:link { 
+    text-decoration:none;
+}
+
+footer a:hover { 
+    font-weight: bold;
+}
+
+footer a:visited {
+    color: #BBBBDD;
+    text-decoration:none;
+}
+
+footer a:active {
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+/* BOTONES */
+
