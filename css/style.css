@@ -1,6 +1,9 @@
-html { /* definiendo la familia de fuentes para todo el documento */
+html { /* definiendo la familia de fuentes para todo el documento y la grilla*/
     font-family: 'ubuntu-general';
     color: #555577;
+    display: grid;
+    grid-template-columns: 0.5 fr repeat(6, 1fr) 0.5 fr;
+    grid-template-rows: repeat(10, 1fr);
 }
 
 /* Reglas */
@@ -15,6 +18,11 @@ html { /* definiendo la familia de fuentes para todo el documento */
     #logo-am {
         width: 48px;
         height: 48px;
+    }
+
+    #img-redes {
+        width: 16px;
+        height:16px;
     }
 
     header span {
@@ -47,6 +55,11 @@ html { /* definiendo la familia de fuentes para todo el documento */
         height: 125px;
     }
 
+    #img-redes {
+        width: 24px;
+        height: 24px;
+    }
+
     header span {
         font-size: 2rem;
         font-weight: bold;
@@ -67,9 +80,19 @@ html { /* definiendo la familia de fuentes para todo el documento */
 }
 
 /* ID */
-#img-redes {
-    width: 24px;
-    height: 24px;
+
+#grilla-std {
+    grid-template-areas:
+    'header header header header header header header header'
+    'header header header header header header header header'
+    'nav nav nav nav nav nav nav nav'
+    'cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo'
+    'cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo'
+    'cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo'
+    'cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo'
+    'cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo'
+    'cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo'
+    'footer footer footer footer footer footer footer footer';
 }
 
 /* CLASES */
@@ -110,7 +133,7 @@ img {
 /* HEADER */
 header {
     background-color: #777799;
-
+    grid-area: header;
 }
 
 /* LINKS DE HEADER */
@@ -137,6 +160,7 @@ header a:active {
 nav {
     background-color: #777799;
     padding-bottom: 0.5rem;
+    grid-area: nav;
 }
 
 nav ul {
@@ -174,6 +198,7 @@ nav a:active {
 section {
     color: #AAAABB;
     padding: 0.25rem;
+    grid-area: cuerpo;
 }
 section img {
     padding: 0.5rem;
@@ -184,6 +209,7 @@ footer {
     color: #111144;
     text-align: right;
     vertical-align: bottom;
+    grid-area: footer;
 }
 
 footer ul {
