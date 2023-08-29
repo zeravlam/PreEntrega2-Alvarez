@@ -20,7 +20,6 @@ html { /* definiendo la familia de fuentes para todo el documento */
 }
 
 /* CLASES */
-
 .selected { /* link seleccionado */
     font-weight: bold;
     border-bottom: 3px solid #BBBBDD;
@@ -46,7 +45,6 @@ html { /* definiendo la familia de fuentes para todo el documento */
   }
 
 /* GENERICOS */
-
 body{
     background-color: #555577;
 }
@@ -56,7 +54,6 @@ img {
 }
 
 /* HEADER */
-
 header {
     background-color: #777799;
 
@@ -68,7 +65,6 @@ header span {
 }
 
 /* LINKS DE HEADER */
-
 header a:link {
     text-decoration:none;
 }
@@ -89,7 +85,6 @@ header a:active {
 }
 
 /* NAVBAR */
-
 nav {
     background-color: #777799;
     padding-bottom: 0.5rem;
@@ -105,7 +100,6 @@ nav ul li { /* para quitarle las viñetas a los elementos de la navbar */
 }
 
 /* LINKS DE NAVBAR */
-
 nav a:link { 
     color: #BBBBDD;
     text-decoration:none;
@@ -128,7 +122,6 @@ nav a:active {
 }
 
 /* SECTION */
-
 section {
     color: #AAAABB;
     padding: 0.5rem;
@@ -152,7 +145,6 @@ section img {
 }
 
 /* FOOTER */
-
 footer {
     color: #111144;
     text-align: right;
@@ -170,7 +162,6 @@ footer ul li { /* para quitarle las viñetas a los elementos del footer */
 }
 
 /* LINKS DE FOOTER */
-
 footer a:link { 
     text-decoration:none;
 }
