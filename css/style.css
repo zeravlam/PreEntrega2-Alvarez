@@ -3,20 +3,73 @@ html { /* definiendo la familia de fuentes para todo el documento */
     color: #555577;
 }
 
+/* Reglas */
+
 @font-face {
     font-family: 'ubuntu-general'; /* familia de fuentes para el sitio */
     src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+/* mobile */
+@media only screen and (max-width: 500px) {
+    #logo-am {
+        width: 48px;
+        height: 48px;
+    }
+
+    header span {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    section h1 {
+        font-size: 0.5 rem;
+        color: #9999AA;
+        text-align: left;
+    }
+    
+    section h2 {
+        font-size: 0.5 rem;
+        color: #888899;
+    }
+    
+    section h3 {
+        font-size: 0.5 rem;
+        color: #777788;
+    }
+
+}
+
+/* desktop */
+@media only screen and (min-width: 501px) {
+    #logo-am {
+        width: 125px;
+        height: 125px;
+    }
+
+    header span {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    section h1 {
+        color: #9999AA;
+        text-align: left;
+    }
+    
+    section h2 {
+        color: #888899;
+    }
+    
+    section h3 {
+        color: #777788;
+    }
 }
 
 /* ID */
 #img-redes {
     width: 24px;
     height: 24px;
-}
-
-#logo-am {
-    width: 125px;
-    height: 125px;
 }
 
 /* CLASES */
@@ -47,6 +100,7 @@ html { /* definiendo la familia de fuentes para todo el documento */
 /* GENERICOS */
 body{
     background-color: #555577;
+
 }
 
 img {
@@ -57,11 +111,6 @@ img {
 header {
     background-color: #777799;
 
-}
-
-header span {
-    font-size: 2.5rem;
-    font-weight: bold;
 }
 
 /* LINKS DE HEADER */
@@ -124,24 +173,10 @@ nav a:active {
 /* SECTION */
 section {
     color: #AAAABB;
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
-
-section h1 {
-    color: #9999AA;
-    text-align: left;
-}
-
-section h2 {
-    color: #888899;
-}
-
-section h3 {
-    color: #777788;
-}
-
 section img {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 /* FOOTER */
